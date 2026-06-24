@@ -1,0 +1,6 @@
+frontend/
+venv/
+backend/chroma_db/
+backend/constitution.pdf
+__pycache__/
+*.pyc

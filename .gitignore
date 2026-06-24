@@ -2,3 +2,6 @@ venv/
 .env
 __pycache__/
 *.pyc
+*.pdf
+frontend/.next/
+frontend/node_modules/
