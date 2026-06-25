@@ -46,12 +46,11 @@ def get_embeddings():
 
 
 def get_llm():
-    """Use Groq in production, Ollama locally."""
     if USE_GROQ:
         from langchain_groq import ChatGroq
         print("   Using Groq LLM")
         return ChatGroq(
-            model="llama-3.2-3b-preview",
+            model="openai/gpt-oss-20b",  # ← updated from llama-3.2-3b-preview
             api_key=GROQ_API_KEY,
             temperature=0.2,
         )
